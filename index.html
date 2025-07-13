@@ -1,66 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta tags for responsive design and character encoding -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Byrne Insurance LTD</title>
+  <!-- Metadata & Viewport for responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Byrne Insurance Ltd</title>
 
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Favicon (replace with your own image if available) -->
-  <link rel="icon" href="assets/images/favicon.ico">
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Site Header: Logo and Navigation Bar -->
+  <!-- Header & Navigation Bar -->
   <header>
-    <div class="container nav-container">
-      <!-- Logo -->
-      <h1 class="logo">Byrne Insurance LTD</h1>
-
-      <!-- Navigation Menu -->
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <div class="logo">Byrne Insurance Ltd</div>
+      <ul class="nav-links">
+        <!-- Navigation Links to Page Sections -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero Section with Call to Action -->
-  <section class="hero">
-    <div class="container">
-      <h2>Protecting What Matters Most</h2>
-      <p>Reliable insurance solutions tailored for individuals, families, and businesses.</p>
-      <a href="services.html" class="btn-primary">Explore Our Services</a>
-    </div>
-  </section>
+  <!-- Main Content Container -->
+  <main>
 
-  <!-- About Section: Description of the Company -->
-  <section class="about">
-    <div class="container">
-      <h3>About Byrne Insurance</h3>
-      <p>
-        At Byrne Insurance LTD, we pride ourselves on providing affordable and comprehensive insurance plans.
-        Our experienced advisors are here to help you find the right coverage for your needs.
-      </p>
-    </div>
-  </section>
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+      <h1>Protecting What Matters Most</h1>
+      <p>Welcome to Byrne Insurance Ltd — your trusted partner in comprehensive insurance coverage for over 20 years.</p>
 
-  <!-- Footer Section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Byrne Insurance LTD. All rights reserved.</p>
-
-      <!-- Social Media Links -->
-      <div class="social-icons">
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+      <!-- Services List -->
+      <div class="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>🏡 Home Insurance – Protect your home and belongings from unexpected events.</li>
+          <li>🚗 Car Insurance – Affordable and reliable auto coverage with 24/7 assistance.</li>
+          <li>🏢 Business Insurance – Custom plans for SMEs, sole traders, and large enterprises.</li>
+          <li>🧍‍♂️ Life Insurance – Secure your family's future with flexible life cover options.</li>
+          <li>🧳 Travel Insurance – Peace of mind on holidays, business trips and beyond.</li>
+          <li>🐾 Pet Insurance – Veterinary care without the financial stress.</li>
+          <li>🩺 Health Insurance – Private health plans tailored to your needs and budget.</li>
+        </ul>
       </div>
-    </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <h1>About Us</h1>
+      <p>Byrne Insurance Ltd is a family-owned, client-first insurance brokerage based in Dublin, Ireland. Since our founding in 2003, we've committed to delivering trusted, straightforward advice and providing the best policies tailored to each client's unique needs.</p>
+      <p>Our team is made up of certified insurance advisors, customer service experts, and claim specialists — all dedicated to making your experience as seamless and secure as possible.</p>
+
+      <!-- Company Values -->
+      <div class="values">
+        <h2>Why Choose Us?</h2>
+        <ul>
+          <li>✅ Local, independent and fully licensed brokers</li>
+          <li>✅ Transparent pricing with no hidden fees</li>
+          <li>✅ Fast claims processing and dedicated agents</li>
+          <li>✅ Rated 4.9/5 by over 2,000 happy customers</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you. Use the form below or call us at <strong>1800 123 456</strong>.</p>
+
+      <!-- Contact Form -->
+      <form class="contact-form" action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Subject Field -->
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <!-- Message Field -->
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Byrne Insurance Ltd. All rights reserved. | Registered in Ireland | Reg No. 12345678</p>
   </footer>
 
 </body>
